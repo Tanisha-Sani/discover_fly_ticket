@@ -167,7 +167,7 @@
             }
             document.getElementById(ticket + '-ticket-number').value = totalEconomyTicket;
             document.getElementById(ticket + '-ticket-number').value = totalEconomyTicket;
-            
+
             ticketCalculation();
         }
 
@@ -194,23 +194,6 @@
         }
 
 
-        // Economy ticket Event Handler
-        // function economyTicketHandle(isIncrease) {
-        //     const economyTicket = document.getElementById("economy-ticket-number");
-        //     const economyTicketNumber = parseInt(economyTicket.value);
-        //     let totalEconomyTicket = economyTicketNumber;
-        //     if (isIncrease == true) {
-        //         totalEconomyTicket = economyTicketNumber + 1;
-        //     }
-
-        //     if (isIncrease == false && economyTicketNumber > 0) {
-        //         totalEconomyTicket = economyTicketNumber - 1;
-        //     }
-        //     economyTicket.value = totalEconomyTicket;
-        //     document.getElementById("economy-ticket-number").value = totalEconomyTicket;
-        // }
-
-
         // //for first Class ticket event handler
         document.getElementById("increase-first-ticket").addEventListener("click", function () {
             handleTicketChange('first', true);
@@ -221,41 +204,16 @@
         });
 
 
-        // function firstTicketHandle(isIncrease) {
-        //     const firstTicket = document.getElementById("first-ticket-number");
-        //     const firstTicketNumber = parseInt(firstTicket.value);
-        //     let totalFirstTicket = firstTicketNumber;
-        //     if (isIncrease == true) {
-        //         totalFirstTicket = firstTicketNumber + 1;
-        //     }
-
-        //     if (isIncrease == false && firstTicketNumber > 0) {
-        //         totalFirstTicket = firstTicketNumber - 1;
-        //     }
-        //     firstTicket.value = totalFirstTicket;
-        //     document.getElementById("first-ticket-number").value = totalFirstTicket;
-        // }
-
-
         //for economy plus button event handler
         document.getElementById("increase-economy-ticket").addEventListener("click", function () {
             handleTicketChange('economy', true);
 
-            // const economyTicket=document.getElementById("economy-ticket-number");
-            // const economyTicketNumber=parseInt(economyTicket.value);
-            // const totalEconomyTicket=economyTicketNumber+1;
-            // document.getElementById("economy-ticket-number").value=totalEconomyTicket;
         });
 
 
         //for minus button event handler
         document.getElementById("decrease-economy-ticket").addEventListener("click", function () {
             handleTicketChange('economy', false);
-            //     const economyTicket=document.getElementById("economy-ticket-number");
-            //     const economyTicketNumber=parseInt(economyTicket.value);
-            //     const totalEconomyTicket=economyTicketNumber-1;
-            // document.getElementById("economy-ticket-number").value=totalEconomyTicket;
-
         });
 
 
